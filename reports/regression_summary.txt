@@ -1,0 +1,31 @@
+AXI4 Interconnect - regression summary (Questa 2024.1, UVM 1.1d)
+
+#   test                      compared  writes  reads  UVM_ERROR  UVM_FATAL  result
+--------------------------------------------------------------------------------------
+1   mas_0_test                2         1       1      0          0          PASS
+2   mas_1_test                2         1       1      0          0          PASS
+3   multi_diff_slave_test     4         2       2      0          0          PASS
+4   multi_same_slave_test     12        6       6      0          0          PASS
+5   multi_same_slave_test     12        6       6      0          0          PASS
+6   multi_diff_slave_test     4         2       2      0          0          PASS
+7   multi_same_slave_test     12        6       6      0          0          PASS
+8   multi_diff_slave_test     4         2       2      0          0          PASS
+9   multi_same_slave_test     12        6       6      0          0          PASS
+10  multi_diff_slave_test     4         2       2      0          0          PASS
+11  multi_same_slave_test     12        6       6      0          0          PASS
+12  multi_diff_slave_test     4         2       2      0          0          PASS
+13  multi_same_slave_test     12        6       6      0          0          PASS
+14  multi_diff_slave_test     4         2       2      0          0          PASS
+15  multi_same_slave_test     12        6       6      0          0          PASS
+16  multi_diff_slave_test     4         2       2      0          0          PASS
+17  multi_same_slave_test     12        6       6      0          0          PASS
+18  multi_diff_slave_test     4         2       2      0          0          PASS
+19  multi_same_slave_test     12        6       6      0          0          PASS
+20  multi_diff_slave_test     4         2       2      0          0          PASS
+21  multi_same_slave_test     12        6       6      0          0          PASS
+22  multi_diff_slave_test     4         2       2      0          0          PASS
+23  multi_same_slave_test     12        6       6      0          0          PASS
+24  multi_diff_slave_test     4         2       2      0          0          PASS
+
+runs: 24   pass: 24   fail: 0
+runs 1-4 = make regress, runs 5-24 = make seeds (10 random seeds x 2 multi-master tests)

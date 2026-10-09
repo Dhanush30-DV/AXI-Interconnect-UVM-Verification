@@ -1,0 +1,9 @@
+work/
+*.wlf
+*.log
+transcript
+modelsim.ini
+mem_cov*
+seed_*
+axi_final
+covhtml*/

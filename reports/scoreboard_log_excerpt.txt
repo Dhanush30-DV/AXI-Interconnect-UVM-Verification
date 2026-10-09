@@ -1,0 +1,49 @@
+Scoreboard output from the 4 regression tests (excerpt of the Questa transcript)
+
+===== mas_0_test =====
+# @ 265000: uvm_test_top.env.sb [AXI_SB] WRITE : Master 0 -> Slave 0  (AWID=148)
+# @ 3065000: uvm_test_top.env.sb [AXI_SB] READ  : Master 0 -> Slave 0  (ARID=192)
+# @ 3066000: uvm_test_top.env.sb [AXI_SB_REPORT] Transactions compared : 2  (writes = 1, reads = 1)
+# PASS
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# [AXI_SB_REPORT]     1
+
+===== mas_1_test =====
+# @ 275000: uvm_test_top.env.sb [AXI_SB] WRITE : Master 1 -> Slave 1  (AWID=164)
+# @ 4315000: uvm_test_top.env.sb [AXI_SB] READ  : Master 1 -> Slave 1  (ARID=36)
+# @ 4316000: uvm_test_top.env.sb [AXI_SB_REPORT] Transactions compared : 2  (writes = 1, reads = 1)
+# PASS
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# [AXI_SB_REPORT]     1
+
+===== multi_diff_slave_test =====
+# @ 195000: uvm_test_top.env.sb [AXI_SB] READ  : Master 0 -> Slave 0  (ARID=8)
+# @ 195000: uvm_test_top.env.sb [AXI_SB] WRITE : Master 1 -> Slave 2  (AWID=143)
+# @ 225000: uvm_test_top.env.sb [AXI_SB] WRITE : Master 0 -> Slave 0  (AWID=16)
+# @ 245000: uvm_test_top.env.sb [AXI_SB] READ  : Master 1 -> Slave 2  (ARID=154)
+# @ 246000: uvm_test_top.env.sb [AXI_SB_REPORT] Transactions compared : 4  (writes = 2, reads = 2)
+# PASS
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# [AXI_SB_REPORT]     1
+
+===== multi_same_slave_test =====
+# @ 205000: uvm_test_top.env.sb [AXI_SB] READ  : Master 0 -> Slave 0  (ARID=2)
+# @ 225000: uvm_test_top.env.sb [AXI_SB] WRITE : Master 0 -> Slave 0  (AWID=85)
+# @ 285000: uvm_test_top.env.sb [AXI_SB] READ  : Master 1 -> Slave 0  (ARID=123)
+# @ 405000: uvm_test_top.env.sb [AXI_SB] WRITE : Master 1 -> Slave 0  (AWID=154)
+# @ 595000: uvm_test_top.env.sb [AXI_SB] READ  : Master 0 -> Slave 1  (ARID=22)
+# @ 605000: uvm_test_top.env.sb [AXI_SB] WRITE : Master 0 -> Slave 1  (AWID=56)
+# @ 715000: uvm_test_top.env.sb [AXI_SB] READ  : Master 1 -> Slave 1  (ARID=189)
+# @ 735000: uvm_test_top.env.sb [AXI_SB] WRITE : Master 1 -> Slave 1  (AWID=130)
+# @ 885000: uvm_test_top.env.sb [AXI_SB] WRITE : Master 0 -> Slave 2  (AWID=63)
+# @ 895000: uvm_test_top.env.sb [AXI_SB] READ  : Master 0 -> Slave 2  (ARID=49)
+# @ 1015000: uvm_test_top.env.sb [AXI_SB] READ  : Master 1 -> Slave 2  (ARID=134)
+# @ 1045000: uvm_test_top.env.sb [AXI_SB] WRITE : Master 1 -> Slave 2  (AWID=160)
+# @ 1066000: uvm_test_top.env.sb [AXI_SB_REPORT] Transactions compared : 12  (writes = 6, reads = 6)
+# PASS
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# [AXI_SB_REPORT]     1
