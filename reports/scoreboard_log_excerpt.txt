@@ -7,7 +7,7 @@ Scoreboard output from the 4 regression tests (excerpt of the Questa transcript)
 # PASS
 # UVM_ERROR :    0
 # UVM_FATAL :    0
-# [AXI_SB_REPORT]     1
+
 
 ===== mas_1_test =====
 # @ 275000: uvm_test_top.env.sb [AXI_SB] WRITE : Master 1 -> Slave 1  (AWID=164)
@@ -16,7 +16,7 @@ Scoreboard output from the 4 regression tests (excerpt of the Questa transcript)
 # PASS
 # UVM_ERROR :    0
 # UVM_FATAL :    0
-# [AXI_SB_REPORT]     1
+
 
 ===== multi_diff_slave_test =====
 # @ 195000: uvm_test_top.env.sb [AXI_SB] READ  : Master 0 -> Slave 0  (ARID=8)
@@ -27,7 +27,7 @@ Scoreboard output from the 4 regression tests (excerpt of the Questa transcript)
 # PASS
 # UVM_ERROR :    0
 # UVM_FATAL :    0
-# [AXI_SB_REPORT]     1
+
 
 ===== multi_same_slave_test =====
 # @ 205000: uvm_test_top.env.sb [AXI_SB] READ  : Master 0 -> Slave 0  (ARID=2)
@@ -46,4 +46,4 @@ Scoreboard output from the 4 regression tests (excerpt of the Questa transcript)
 # PASS
 # UVM_ERROR :    0
 # UVM_FATAL :    0
-# [AXI_SB_REPORT]     1
+

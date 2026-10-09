@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#334155"/></marker>
+    <marker id="b" markerWidth="10" markerHeight="8" refX="1" refY="4" orient="auto"><path d="M10,0 L0,4 L10,8 z" fill="#334155"/></marker>
+  </defs>
+  <rect width="1000" height="640" fill="#ffffff"/>
+  <rect x="10" y="10" width="980" height="620" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="30" y="36" font-size="15" font-weight="700" fill="#0f172a">top  →  test  (mas_0_test · mas_1_test · multi_diff_slave_test · multi_same_slave_test)</text>
+  <rect x="30" y="50" width="940" height="440" rx="8" fill="#eef2ff" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="48" y="74" font-size="14" font-weight="700" fill="#3730a3">env</text>
+  <rect x="440" y="60" width="120" height="30" rx="6" fill="#ffffff" stroke="#6366f1"/>
+  <text x="500" y="80" font-size="12" text-anchor="middle" fill="#3730a3">env_config</text>
+
+  <!-- master agent top -->
+  <rect x="50" y="95" width="290" height="380" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+  <text x="195" y="117" font-size="14" font-weight="700" text-anchor="middle" fill="#713f12">master_agt_top</text>
+  <g font-size="12" text-anchor="middle" fill="#0f172a">
+    <rect x="65" y="130" width="260" height="160" rx="6" fill="#ffffff" stroke="#a16207"/>
+    <text x="195" y="150" font-weight="700">m_agt[0]</text>
+    <rect x="80" y="162" width="100" height="40" rx="5" fill="#fffbeb" stroke="#a16207"/><text x="130" y="187">sequencer</text>
+    <rect x="80" y="232" width="100" height="40" rx="5" fill="#fffbeb" stroke="#a16207"/><text x="130" y="257">driver</text>
+    <rect x="210" y="197" width="100" height="40" rx="5" fill="#fffbeb" stroke="#a16207"/><text x="260" y="222">monitor</text>
+    <path d="M130,202 L130,230" stroke="#334155" stroke-width="1.5" marker-end="url(#a)"/>
+    <rect x="65" y="300" width="260" height="160" rx="6" fill="#ffffff" stroke="#a16207"/>
+    <text x="195" y="320" font-weight="700">m_agt[1]</text>
+    <rect x="80" y="332" width="100" height="40" rx="5" fill="#fffbeb" stroke="#a16207"/><text x="130" y="357">sequencer</text>
+    <rect x="80" y="402" width="100" height="40" rx="5" fill="#fffbeb" stroke="#a16207"/><text x="130" y="427">driver</text>
+    <rect x="210" y="367" width="100" height="40" rx="5" fill="#fffbeb" stroke="#a16207"/><text x="260" y="392">monitor</text>
+    <path d="M130,372 L130,400" stroke="#334155" stroke-width="1.5" marker-end="url(#a)"/>
+  </g>
+
+  <!-- scoreboard -->
+  <rect x="383" y="110" width="234" height="250" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+  <g font-size="12" text-anchor="middle" fill="#0f172a">
+    <text x="500" y="135" font-size="14" font-weight="700">scoreboard</text>
+    <text x="500" y="160">fifo_mas[2] · fifo_slv[3]</text>
+    <text x="500" y="190">match by AWID / ARID</text>
+    <text x="500" y="210">address-decode (routing) check</text>
+    <text x="500" y="230">addr · ctrl · data · strobe ·</text>
+    <text x="500" y="248">response · ID compare</text>
+    <text x="500" y="278" font-weight="700">15 covergroups</text>
+    <text x="500" y="298">burst type / len / size, IDs,</text>
+    <text x="500" y="316">address ranges, responses,</text>
+    <text x="500" y="334">VALID×READY crosses, data, WSTRB</text>
+  </g>
+  <rect x="420" y="385" width="160" height="70" rx="8" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+  <text x="500" y="414" font-size="13" font-weight="700" text-anchor="middle" fill="#0f172a">reset_agent</text>
+  <text x="500" y="434" font-size="11" text-anchor="middle" fill="#475569">reset_driver → ARESETn</text>
+  <path d="M310,217 C350,217 350,190 381,190" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#a)"/>
+  <path d="M310,387 C360,387 350,300 381,300" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="345" y="250" font-size="10" fill="#475569">analysis port</text>
+
+  <!-- slave agent top -->
+  <rect x="660" y="95" width="295" height="380" rx="8" fill="#cffafe" stroke="#0e7490" stroke-width="1.5"/>
+  <text x="807" y="117" font-size="14" font-weight="700" text-anchor="middle" fill="#164e63">slave_agt_top</text>
+  <g font-size="12" text-anchor="middle" fill="#0f172a">
+    <rect x="675" y="130" width="265" height="105" rx="6" fill="#ffffff" stroke="#0e7490"/>
+    <text x="807" y="150" font-weight="700">s_agt[0]</text>
+    <rect x="690" y="165" width="70" height="40" rx="5" fill="#ecfeff" stroke="#0e7490"/><text x="725" y="190">monitor</text>
+    <rect x="770" y="165" width="75" height="40" rx="5" fill="#ecfeff" stroke="#0e7490"/><text x="807" y="190">driver</text>
+    <rect x="855" y="165" width="75" height="40" rx="5" fill="#ecfeff" stroke="#0e7490"/><text x="892" y="190">seqr</text>
+    <rect x="675" y="245" width="265" height="105" rx="6" fill="#ffffff" stroke="#0e7490"/>
+    <text x="807" y="265" font-weight="700">s_agt[1]</text>
+    <rect x="690" y="280" width="70" height="40" rx="5" fill="#ecfeff" stroke="#0e7490"/><text x="725" y="305">monitor</text>
+    <rect x="770" y="280" width="75" height="40" rx="5" fill="#ecfeff" stroke="#0e7490"/><text x="807" y="305">driver</text>
+    <rect x="855" y="280" width="75" height="40" rx="5" fill="#ecfeff" stroke="#0e7490"/><text x="892" y="305">seqr</text>
+    <rect x="675" y="360" width="265" height="105" rx="6" fill="#ffffff" stroke="#0e7490"/>
+    <text x="807" y="380" font-weight="700">s_agt[2]</text>
+    <rect x="690" y="395" width="70" height="40" rx="5" fill="#ecfeff" stroke="#0e7490"/><text x="725" y="420">monitor</text>
+    <rect x="770" y="395" width="75" height="40" rx="5" fill="#ecfeff" stroke="#0e7490"/><text x="807" y="420">driver</text>
+    <rect x="855" y="395" width="75" height="40" rx="5" fill="#ecfeff" stroke="#0e7490"/><text x="892" y="420">seqr</text>
+  </g>
+  <path d="M688,185 C650,185 650,170 617,170" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#a)"/>
+  <path d="M688,300 C650,300 650,240 617,240" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#a)"/>
+  <path d="M688,415 C650,415 650,320 617,320" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- interfaces and DUT -->
+  <rect x="50" y="530" width="250" height="70" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+  <text x="175" y="560" font-size="13" font-weight="700" text-anchor="middle" fill="#0f172a">axi_master_interface × 2</text>
+  <text x="175" y="580" font-size="11" text-anchor="middle" fill="#475569">clocking blocks + 23 SVA properties</text>
+  <rect x="360" y="515" width="280" height="100" rx="8" fill="#1e293b" stroke="#0f172a" stroke-width="1.5"/>
+  <text x="500" y="555" font-size="15" font-weight="700" text-anchor="middle" fill="#ffffff">AXI4 INTERCONNECT (DUT)</text>
+  <text x="500" y="577" font-size="11" text-anchor="middle" fill="#cbd5e1">address decode · round-robin arbiter per slave</text>
+  <text x="500" y="595" font-size="11" text-anchor="middle" fill="#cbd5e1">B / R routers · outstanding trackers</text>
+  <rect x="700" y="530" width="255" height="70" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+  <text x="827" y="560" font-size="13" font-weight="700" text-anchor="middle" fill="#0f172a">axi_slave_interface × 3</text>
+  <text x="827" y="580" font-size="11" text-anchor="middle" fill="#475569">clocking blocks + 21 SVA properties</text>
+  <path d="M302,565 L358,565" stroke="#334155" stroke-width="1.5" marker-start="url(#b)" marker-end="url(#a)"/>
+  <path d="M642,565 L698,565" stroke="#334155" stroke-width="1.5" marker-start="url(#b)" marker-end="url(#a)"/>
+  <path d="M175,477 L175,528" stroke="#334155" stroke-width="1.5" marker-start="url(#b)" marker-end="url(#a)"/>
+  <path d="M827,477 L827,528" stroke="#334155" stroke-width="1.5" marker-start="url(#b)" marker-end="url(#a)"/>
+  <text x="185" y="507" font-size="11" fill="#475569">virtual interface</text>
+  <text x="837" y="507" font-size="11" fill="#475569">virtual interface</text>
+</svg>
